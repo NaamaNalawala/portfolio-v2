@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Data Engineer & Systems Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">YourName</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>
+                <li><a href="#articles" onclick="closeMenu()">Articles</a></li>
+                <li><a href="#beyond" onclick="closeMenu()">Beyond Tech</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span>Your Name</span></h1>
+                    <p class="tagline">Data Engineer & Systems Designer</p>
+                    <p>I build reliable data systems, design automation that doesn't break, and solve complex technical problems. My specialty? Making sure things work not just today, but six months from now when requirements change.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-photo">YN</div>
+                        <h3>Data Engineer</h3>
+                        <p>Based in [Your City]<br>Available for projects & consulting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="auto-height">
+        <div class="container">
+            <h2 class="fade-up">About Me</h2>
+            <p class="section-subtitle fade-up">The journey from developer to systems engineer</p>
+            
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <p>I started as a <strong>Full Stack Developer</strong>, building web applications with .NET and SQL. I loved creating features that worked—but I quickly realized something: <em>you can't know if software works unless you can measure it.</em></p>
+                    
+                    <p>So I became a <strong>BI Developer</strong>, designing reports and dashboards in Power BI. I learned how to turn messy data into clear insights that actually help people make decisions.</p>
+                    
+                    <p>Then I noticed another problem: <em>repetitive manual work creates errors.</em> I dove into <strong>automation and Power Platform</strong>, building systems that reduced human mistakes and saved hours of work.</p>
+                    
+                    <p>Today, I'm a <strong>Data Engineer</strong>—I build the pipelines, databases, and infrastructure that power everything else. I design systems that handle real-world complexity, not just demo scenarios.</p>
+                </div>
+                
+                <div class="fade-up">
+                    <div class="highlight-box">
+                        <h3 style="color: #3498db; margin-bottom: 15px;">What Makes Me Different</h3>
+                        <p style="color: #95a5b8; line-height: 1.8;">I don't just build what you ask for—I ask what could go wrong. I think about edge cases, failure modes, and what happens when your data doubles or your team grows. I design for the long term, not just the deadline.</p>
+                    </div>
+                    
+                    <div class="highlight-box" style="margin-top: 25px; border-left-color: #2ecc71;">
+                        <h3 style="color: #2ecc71; margin-bottom: 15px;">My Approach</h3>
+                        <p style="color: #95a5b8; line-height: 1.8;">Every project starts with understanding the real problem—not just the request. I map out dependencies, identify risks, and design systems that are maintainable, testable, and built to evolve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="auto-height">
+        <div class="container">
+            <h2 class="fade-up">Skills & Technologies</h2>
+            <p class="section-subtitle fade-up">The tools I use to build reliable systems</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category fade-up">
+                    <h3>Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Azure Data Factory</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-up">
+                    <h3>Business Intelligence</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">DAX</span>
+                        <span class="skill-tag">Power Query</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">Reporting</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-up">
+                    <h3>Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">.NET</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-up">
+                    <h3>Automation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power Automate</span>
+                        <span class="skill-tag">Power Apps</span>
+                        <span class="skill-tag">Process Design</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-up">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-up">
+                    <h3>Architecture</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">System Design</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">API Design</span>
+                        <span class="skill-tag">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="auto-height">
+        <div class="container">
+            <h2 class="fade-up">Featured Projects</h2>
+            <p class="section-subtitle fade-up">Real problems I've solved with code and architecture</p>
+            
+            <div class="projects-grid">
+                <div class="project-card fade-up">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+                        <div>
+                            <h3>Enterprise Data Pipeline Redesign</h3>
+                        </div>
+                        <span class="project-type">Data Engineering</span>
+                    </div>
+                    <p>Rebuilt a failing data pipeline that produced inconsistent reports. The old system had no error handling or quality checks—leadership was making decisions on bad data without knowing it.</p>
+                    <p><strong>Solution:</strong> Mapped all dependencies, built parallel pipelines with automated quality checks, schema validation, and logging at every step. Cut over only after proving the new system caught errors the old one missed.</p>
+                    <p><strong>Impact:</strong> Zero data discrepancies in 6 months, restored stakeholder confidence, clear documentation for future changes.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Azure Data Factory</span>
+                        <span class="tech-badge">SQL Server</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Power BI</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+                        <div>
+                            <h3>Automation Governance Framework</h3>
+                        </div>
+                        <span class="project-type">Automation</span>
+                    </div>
+                    <p>A growing company had dozens of Power Automate flows with no ownership structure. When flows failed, nobody knew. When changes were needed, nobody understood the dependencies.</p>
+                    <p><strong>Solution:</strong> Designed governance framework with naming standards, centralized logging, dependency mapping, and clear ownership. Rebuilt flows with retry logic, failure notifications, and rollback procedures.</p>
+                    <p><strong>Impact:</strong> 90% reduction in silent failures, new team members can safely modify flows, clear audit trail for compliance.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Power Automate</span>
+                        <span class="tech-badge">Power Apps</span>
+                        <span class="tech-badge">SharePoint</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+                        <div>
+                            <h3>Real-Time Analytics Dashboard</h3>
+                        </div>
+                        <span class="project-type">BI & Analytics</span>
+                    </div>
+                    <p>Built an executive dashboard that pulls from 5 different data sources, updates every 15 minutes, and handles drill-downs without breaking. The challenge? Data quality varied wildly across sources.</p>
+                    <p><strong>Solution:</strong> Created a unified data model with transformation layers, quality checks, and clear data lineage documentation. Dashboard includes data freshness indicators so users know what they're looking at.</p>
+                    <p><strong>Impact:</strong> Executives can make decisions in real-time instead of waiting for weekly reports, clear documentation means others can maintain it.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Power BI</span>
+                        <span class="tech-badge">DAX</span>
+                        <span class="tech-badge">SQL Server</span>
+                        <span class="tech-badge">Azure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="auto-height">
+        <div class="container">
+            <h2 class="fade-up">Achievements & Milestones</h2>
+            <p class="section-subtitle fade-up">Recognition and accomplishments along the journey</p>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card fade-up">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Microsoft Certified: Azure Data Engineer Associate</h3>
+                    <p>Demonstrated expertise in designing and implementing data solutions on Azure platform</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+
+                <div class="achievement-card fade-up">
+                    <div class="achievement-icon">⭐</div>
+                    <h3>Built 50+ Production Data Pipelines</h3>
+                    <p>Designed and deployed mission-critical data systems serving thousands of users daily</p>
+                    <span class="achievement-year">2020-2025</span>
+                </div>
+
+                <div class="achievement-card fade-up">
+                    <div class="achievement-icon">📊</div>
+                    <h3>Power BI Performance Optimization</h3>
+                    <p>Reduced dashboard load times by 80% through DAX optimization and data modeling improvements</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+
+                <div class="achievement-card fade-up">
+                    <div class="achievement-icon">🎓</div>
+                    <h3>Mentored 15+ Junior Engineers</h3>
+                    <p>Helped team members grow their skills in data engineering and system design principles</p>
+                    <span class="achievement-year">Ongoing</span>
+                </div>
+
+                <div class="achievement-card fade-up">
+                    <div class="achievement-icon">🚀</div>
+                    <h3>Zero-Downtime Migration Success</h3>
+                    <p>Led critical database migration with 99.99% uptime during transition period</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+
+                <div class="achievement-card fade-up">
+                    <div class="achievement-icon">💡</div>
+                    <h3>Process Automation Champion</h3>
+                    <p>Automated workflows saving 200+ hours per month across organization</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="auto-height">
+        <div class="container">
+            <h2 class="fade-up">Technical Writing</h2>
+            <p class="section-subtitle fade-up">Sharing what I've learned along the way</p>
+            
+            <div class="articles-grid">
+                <div class="article-card fade-up">
+                    <div class="article-date">January 2026</div>
+                    <h3>Why Your Data Pipeline Fails Silently (And How to Fix It)</h3>
+                    <p>Most data pipelines are designed for the happy path. Here's how to build systems that scream when they're wrong, not fail quietly in production.</p>
+                </div>
+
+                <div class="article-card fade-up">
+                    <div class="article-date">December 2025</div>
+                    <h3>Power BI Performance: Beyond the Basics</h3>
+                    <p>DAX optimization techniques that actually matter when your dataset hits millions of rows and users start complaining about slow visuals.</p>
+                </div>
+
+                <div class="article-card fade-up">
+                    <div class="article-date">November 2025</div>
+                    <h3>Designing Automation That Doesn't Become Technical Debt</h3>
+                    <p>Quick scripts multiply fast. Six months later, nobody knows what depends on what. Here's how to build automation as deliberate architecture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Tech Section -->
+    <section id="beyond" class="auto-height">
+        <div class="container">
+            <h2 class="fade-up">Beyond the Code</h2>
+            <p class="section-subtitle fade-up">Who I am when I'm not building systems</p>
+            
+            <div class="beyond-grid">
+                <div class="hobby-card fade-up">
+                    <div class="hobby-icon">☕</div>
+                    <h3>When I'm Not Debugging</h3>
+                    <p>I'm probably exploring new coffee shops, reading about psychology and decision-making, or playing strategy games that make me think about systems in different ways.</p>
+                    <p>I believe the best engineers are curious about more than just code—understanding how people think helps build better systems for them.</p>
+                </div>
+
+                <div class="hobby-card fade-up">
+                    <div class="hobby-icon">🎯</div>
+                    <h3>Why I Do This Work</h3>
+                    <p>I get genuinely excited when a complex system finally clicks into place. There's something satisfying about designing something that just... works. Reliably. Even when things go wrong.</p>
+                    <p>The best compliment I've ever received: "I don't worry about this system anymore. It just runs."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="auto-height">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="fade-up">Let's Work Together</h2>
+                <p class="section-subtitle fade-up">Have a complex system that needs reliable architecture? Let's talk.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-card fade-up">
+                        <h3>Email</h3>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+
+                    <div class="contact-card fade-up">
+                        <h3>LinkedIn</h3>
+                        <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
+                    </div>
+
+                    <div class="contact-card fade-up">
+                        <h3>GitHub</h3>
+                        <a href="#" target="_blank">github.com/yourusername</a>
+                    </div>
+                </div>
+
+                <p class="fade-up" style="margin-top: 40px; color: #7f8c8d;">I typically respond within 48 hours. Looking forward to hearing about your project.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
