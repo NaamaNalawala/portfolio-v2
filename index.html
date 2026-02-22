@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">YourName</div>
+            <div class="logo">Naama Taha</div>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -37,7 +37,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content">
-                    <h1>Hi, I'm <span>Your Name</span></h1>
+                    <h1>Hi, I'm <span>Naama Taha</span></h1>
                     <p class="tagline">Data Engineer & Systems Designer</p>
                     <p>I build reliable data systems, design automation that doesn't break, and solve complex technical problems. My specialty? Making sure things work not just today, but six months from now when requirements change.</p>
                     <div class="hero-buttons">
@@ -47,9 +47,11 @@
                 </div>
                 <div class="hero-image">
                     <div class="profile-card">
-                        <div class="profile-photo">YN</div>
-                        <h3>Data Engineer</h3>
-                        <p>Based in [Your City]<br>Available for projects & consulting</p>
+                        <div class="profile-photo">
+                            <img src="assets/profile-image.png" alt="Profile Photo">
+                        </div>
+                        <h3>Data, Software and AI Consultant</h3>
+                        <p>Based in Dubai<br>Available for projects & consulting</p>
                     </div>
                 </div>
             </div>
@@ -64,13 +66,13 @@
             
             <div class="about-grid">
                 <div class="about-text fade-up">
-                    <p>I started as a <strong>Full Stack Developer</strong>, building web applications with .NET and SQL. I loved creating features that worked—but I quickly realized something: <em>you can't know if software works unless you can measure it.</em></p>
-                    
-                    <p>So I became a <strong>BI Developer</strong>, designing reports and dashboards in Power BI. I learned how to turn messy data into clear insights that actually help people make decisions.</p>
-                    
-                    <p>Then I noticed another problem: <em>repetitive manual work creates errors.</em> I dove into <strong>automation and Power Platform</strong>, building systems that reduced human mistakes and saved hours of work.</p>
-                    
-                    <p>Today, I'm a <strong>Data Engineer</strong>—I build the pipelines, databases, and infrastructure that power everything else. I design systems that handle real-world complexity, not just demo scenarios.</p>
+                    <p>I started my journey as a <strong>Full Stack Developer</strong>, building web applications with .NET and SQL and gaining a solid understanding of how software is designed and delivered.</p>
+
+                    <p>Over time, I expanded into <strong>Business Intelligence</strong>, where I focused on turning raw data into meaningful insights through <strong>Power BI</strong> dashboards and reports that support better decision-making.</p>
+
+                    <p>To further improve efficiency, I focused on automation and the <strong>Power Platform</strong>, developing solutions that streamlined repetitive processes, reduced errors, and saved significant time for teams.</p>
+
+                    <p>Today, I work as a <strong>Data Engineer</strong>, building reliable pipelines, databases, and data infrastructure that support scalable analytics and real-world business operations.</p>
                 </div>
                 
                 <div class="fade-up">
@@ -100,7 +102,9 @@
                     <div class="skill-tags">
                         <span class="skill-tag">SQL Server</span>
                         <span class="skill-tag">Azure Data Factory</span>
+                        <span class="skill-tag">Azure Cosmos</span>
                         <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Agents</span>
                         <span class="skill-tag">ETL Pipelines</span>
                         <span class="skill-tag">Data Warehousing</span>
                     </div>
@@ -110,6 +114,7 @@
                     <h3>Business Intelligence</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Dashboards</span>
                         <span class="skill-tag">DAX</span>
                         <span class="skill-tag">Power Query</span>
                         <span class="skill-tag">Data Modeling</span>
@@ -122,6 +127,11 @@
                     <div class="skill-tags">
                         <span class="skill-tag">.NET</span>
                         <span class="skill-tag">C#</span>
+                        <span class="skill-tag">WPF</span>
+                        <span class="skill-tag">Payment Integration</span>
+                        <span class="skill-tag">Hardware Integration</span>
+                        <span class="skill-tag">Real-time Systems</span>
+                        <span class="skill-tag">Structured Logging</span>
                         <span class="skill-tag">ASP.NET</span>
                         <span class="skill-tag">APIs</span>
                         <span class="skill-tag">Microservices</span>
@@ -171,18 +181,21 @@
                 <div class="project-card fade-up">
                     <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
                         <div>
-                            <h3>Enterprise Data Pipeline Redesign</h3>
+                            <h3>SmartLocker Payment &amp; Hardware System (Bag Bunker)</h3>
                         </div>
-                        <span class="project-type">Data Engineering</span>
+                        <span class="project-type">Systems &amp; Hardware</span>
                     </div>
-                    <p>Rebuilt a failing data pipeline that produced inconsistent reports. The old system had no error handling or quality checks—leadership was making decisions on bad data without knowing it.</p>
-                    <p><strong>Solution:</strong> Mapped all dependencies, built parallel pipelines with automated quality checks, schema validation, and logging at every step. Cut over only after proving the new system caught errors the old one missed.</p>
-                    <p><strong>Impact:</strong> Zero data discrepancies in 6 months, restored stakeholder confidence, clear documentation for future changes.</p>
+                    <p>Led end-to-end development of the Bag Bunker SmartLocker system, transforming a fragile prototype into a production-ready, payment-enabled hardware-integrated platform. The initial system faced payment inconsistencies, locker state failures, hardware edge-case issues, and lacked structured error handling, logging, and recovery mechanisms.</p>
+                    <p><strong>Solution:</strong> Architected and implemented the complete application logic using <strong>C#</strong> and <strong>WPF</strong>, integrating Nayax payment systems with secure transaction validation and real-time locker state synchronization. Designed robust locker allocation algorithms, failure recovery flows, and fallback handling for hardware disruptions. Introduced structured logging, transaction traceability, retry policies, and defensive programming to eliminate deadlocks between payment confirmation and locker activation. Optimized performance for real-time scoreboard-style live updates across multiple lockers while maintaining data integrity. Coordinated hardware, UI, and backend layers to function as a cohesive system.</p>
+                    <p><strong>Impact:</strong> Delivered a stable, scalable SmartLocker solution operating reliably in live environments. Eliminated payment-locker mismatches, reduced manual operational intervention, improved transaction visibility, and strengthened system resilience. Established clean architecture, documentation, and maintainable patterns to support future expansion, admin panel development, and hardware upgrades.</p>
                     <div class="project-tech">
-                        <span class="tech-badge">Azure Data Factory</span>
-                        <span class="tech-badge">SQL Server</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Power BI</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">WPF</span>
+                        <span class="tech-badge">Nayax</span>
+                        <span class="tech-badge">Payment Integration</span>
+                        <span class="tech-badge">Hardware Integration</span>
+                        <span class="tech-badge">Real-time Systems</span>
+                        <span class="tech-badge">Structured Logging</span>
                     </div>
                 </div>
 
@@ -233,15 +246,15 @@
             <div class="achievements-grid">
                 <div class="achievement-card fade-up">
                     <div class="achievement-icon">🏆</div>
-                    <h3>Microsoft Certified: Azure Data Engineer Associate</h3>
-                    <p>Demonstrated expertise in designing and implementing data solutions on Azure platform</p>
+                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                    <p>Demonstrated foundational knowledge of cloud concepts and core Azure services.</p>
                     <span class="achievement-year">2024</span>
                 </div>
 
                 <div class="achievement-card fade-up">
                     <div class="achievement-icon">⭐</div>
-                    <h3>Built 50+ Production Data Pipelines</h3>
-                    <p>Designed and deployed mission-critical data systems serving thousands of users daily</p>
+                    <h3>Built 50+ Production Dashboards</h3>
+                    <p>Designed and deployed mission-critical dashboards serving thousands of users daily, focusing on performance and clarity for decision-makers.</p>
                     <span class="achievement-year">2020-2025</span>
                 </div>
 
@@ -253,9 +266,9 @@
                 </div>
 
                 <div class="achievement-card fade-up">
-                    <div class="achievement-icon">🎓</div>
-                    <h3>Mentored 15+ Junior Engineers</h3>
-                    <p>Helped team members grow their skills in data engineering and system design principles</p>
+                    <div class="achievement-icon">✍️</div>
+                    <h3>Technical Content Author &amp; Knowledge Sharer</h3>
+                    <p>Published practical deep-dive articles on Microsoft Fabric features, sharing real implementation challenges and lessons learned with the data community.</p>
                     <span class="achievement-year">Ongoing</span>
                 </div>
 
@@ -283,10 +296,10 @@
             <p class="section-subtitle fade-up">Sharing what I've learned along the way</p>
             
             <div class="articles-grid">
-                <div class="article-card fade-up">
+                <div class="article-card fade-up" onclick="window.open('https://www.linkedin.com/posts/naama-nalawala_microsoftfabric-powerbi-dataengineering-activity-7363439718514024451-thj7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACdBR98B31evNTLvu72Ki3a-7IlXtQ3EAb4', '_blank')">
                     <div class="article-date">January 2026</div>
-                    <h3>Why Your Data Pipeline Fails Silently (And How to Fix It)</h3>
-                    <p>Most data pipelines are designed for the happy path. Here's how to build systems that scream when they're wrong, not fail quietly in production.</p>
+                    <h3>Eventstream in Microsoft Fabric — What the Docs Don't Tell You</h3>
+                    <p>Eventstream from Cosmos DB to Lakehouse looks simple on paper, but in practice it streams raw change events, not clean tables—so you must flatten the payload and deduplicate by timestamp to get the latest usable records.</p>
                 </div>
 
                 <div class="article-card fade-up">
@@ -338,17 +351,17 @@
                 <div class="contact-methods">
                     <div class="contact-card fade-up">
                         <h3>Email</h3>
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        <a href="mailto:naama.nalawala@gmail.com">naama.nalawala@gmail.com</a>
                     </div>
 
                     <div class="contact-card fade-up">
                         <h3>LinkedIn</h3>
-                        <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
+                        <a href="https://www.linkedin.com/in/naama-nalawala/" target="_blank">linkedin.com/in/naama-nalawala</a>
                     </div>
 
                     <div class="contact-card fade-up">
-                        <h3>GitHub</h3>
-                        <a href="#" target="_blank">github.com/yourusername</a>
+                        <h3>Phone</h3>
+                        <a href="tel:+971585775304">+971 58 577 5304</a>
                     </div>
                 </div>
 
