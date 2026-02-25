@@ -1105,6 +1105,12 @@ h2::after {
     nav .container {
         padding: 0 20px;
     }
+    /* collapse two-column grids */
+    .about-grid,
+    .beyond-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1125,6 +1131,12 @@ h2::after {
     .articles-grid,
     .contact-methods,
     .achievements-grid {
+        gap: 20px;
+    }
+    /* ensure any remaining two-col structures collapse */
+    .about-grid,
+    .beyond-grid {
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 }
