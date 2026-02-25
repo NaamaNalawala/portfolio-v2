@@ -1057,3 +1057,74 @@ h2::after {
     font-size: 0.85rem;
     font-weight: 600;
 }
+
+/* -- responsive tweaks -- */
+@media (max-width: 768px) {
+    /* Simplify layout to single column */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+    .profile-card {
+        padding: 30px;
+    }
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+    section {
+        padding: 80px 20px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    nav .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.1rem;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    .nav-links a {
+        font-size: 1rem;
+    }
+    .skills-grid,
+    .projects-grid,
+    .articles-grid,
+    .contact-methods,
+    .achievements-grid {
+        gap: 20px;
+    }
+}
