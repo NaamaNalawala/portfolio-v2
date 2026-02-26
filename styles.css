@@ -507,6 +507,11 @@ section.auto-height {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    /* prevent image download and right-click */
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
 }
 
 @keyframes pulse {
@@ -596,13 +601,20 @@ h2::after {
 }
 
 .skill-category:hover::before {
-    opacity: 1;
+    /* slightly transparent so text stays readable */
+    opacity: 0.6;
 }
 
 .skill-category:hover {
     transform: translateY(-10px) rotateX(5deg);
     box-shadow: 0 15px 40px rgba(52, 152, 219, 0.3);
     background: rgba(26, 35, 50, 0.9);
+}
+
+/* ensure headings and tags contrast against animated gradient */
+.skill-category:hover h3,
+.skill-category:hover .skill-tag {
+    color: #ffffff;
 }
 
 .skill-category h3 {
